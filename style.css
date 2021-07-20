@@ -1,0 +1,58 @@
+/*Marge site et police*/
+main{
+    margin-top: 40px;
+    padding: 40px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    
+}  
+
+/*Image logo Reservia*/
+.imgreservia{
+    display:flex;
+    margin: 25px;
+    padding: 0px;
+    list-style:none;
+    position: absolute; left: 20px;px;
+}
+
+/*Menu Reservia*/
+.menuhead{
+    display:flex;
+    margin-top: 40px;
+    padding: 0px;
+}
+
+nav ul{
+    display:flex;
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+    position: absolute; right:0px;
+}
+
+nav a{
+    color: #000;
+    padding: 2em;
+    display:flex;
+    text-align:center;
+    text-decoration: none;
+    padding-top: 40px;
+}    
+
+a:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+
+/*Slogan Reservia*/
+.slogan{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.slogandescription{
+    margin-top: -15px;
+}
