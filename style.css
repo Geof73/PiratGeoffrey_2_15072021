@@ -1,29 +1,26 @@
 /*Marge site et police*/
-main{
-    margin-left:300px;
-}
 
 body{
+    max-width: 800px;
+    margin: 0 auto;
     font-family: 'Raleway', sans-serif;
     letter-spacing: -0.5px;
 }  
 
 /*Image logo Reservia*/
 .imgreservia{
-    margin-left:300px;
-    margin-top:25px;
+
 }
 
 /*Menu Reservia*/
-.menuhead{
+header{
     display:flex ;
 }
 
 nav ul{
     display:flex;
-    margin-left: 240px;
+
     list-style:none;
-    margin-top: 40px;
 }
 
 nav a.menu{
