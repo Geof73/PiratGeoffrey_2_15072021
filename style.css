@@ -1,80 +1,112 @@
 /*Marge site et police*/
-body{
-    min-width: 860px;
-    margin-top: 32px;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: -0.5px;
-}  
-main, header{
-    max-width: 980px;
+
+main, header {
+    max-width: 1100px;
     margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*Menu Reservia*/
-header{
+
+header {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1em;
 }
-nav ul{
+
+nav {
+    width: 79%;
+    margin-right: 2em;
+}
+
+nav ul {
     display: flex;
     list-style: none;
-    font-size: 1em;
+    justify-content: flex-end;
 }
-nav a.menu{
-    padding: 2em;
+
+nav a {
+    padding: 0em 2em 0em 2em;
     text-decoration: none;
-    color: #000;
-}    
-a.menu:hover{
-    padding-top: 46px;
-    color: #0065FC;
-    border-top: solid #0065FC;
+    color: black;
 }
-.submit:hover{
-    border-color: #a1bee9;
+
+nav a:hover {
+    border-top: solid;
+    color: #0065FC;
+    padding-top: 1.9em;
+}
+
+.sinscrire {
+    color: #0065FC;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /*Slogan Reservia*/
-.slogan1{
-    margin-bottom: 0px;
-    font-size: 1em;
+
+.slogan {
+    height: 4em;
+}
+
+.slogan1 {
+    display: flex;
+    flex-wrap: wrap;
     font-weight: bolder;
 }
-.slogan2{
-    font-size: 1em;
+
+.slogan2 {
+    font-size: smaller;
     line-height: 0px;
 }
 
 /*Moteur de recherche*/
-.mdr{
+
+.mdr {
     display: flex;
-    margin-top: 30px;
+    height: 2.5em;
 }
-.gps{
+
+.gps {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 47px;
+    width: 5%;
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
-}    
-.recherche{
-    padding: 11px 20px 10px 10px;
-    border: solid 2px  #F2F2F2;
-    font-size: 1em;
+}
+
+.recherche {
+    padding-left: 1em;
+    border: solid 2px #F2F2F2;
     font-family: raleway;
 }
-::placeholder{
-    color:black;
+
+::placeholder {
+    color: black;
     font-weight: bold;
     opacity: 1;
 }
-.submit{
-    position: relative; right:4px;
+
+.submit {
+    width: 12%;
+    border-radius: 0px 15px 15px 0px;
+    color: #ffffff;
+    border-color: #0065FC;
+    background-color: #0065FC;
+    font-weight: bold;
+}
+
+.submit:hover {
+    border-color: #F2F2F2;
+}
+
+.submit2 {
+    display: none;
     padding: 10px 20px 10px 10px;
-    border-radius:0px 20px 20px 0px;
-    color:#ffffff;
+    border-radius: 0px 20px 20px 0px;
+    color: #ffffff;
     border-color: #0065FC;
     background-color: #0065FC;
     font-weight: bold;
@@ -82,250 +114,469 @@ a.menu:hover{
 }
 
 /*Filtres*/
-.boxmfiltre{
+
+.boxmfiltre {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin-top: 25px;
+    height: 5em;
+    gap: 1em
 }
-.boxfiltre{
+
+.boxfiltre {
     display: flex;
     align-items: center;
     padding: 9px 20px 9px 0px;
-    margin-right: 15px;
     border-radius: 25px;
     border: solid #DEEBFF;
 }
-.titrefiltre{
-    margin-right: 25px;
+
+.titrefiltre {
+    margin-right: 1em;
     font-weight: bolder;
 }
-.logofiltre{
+
+.logofiltre {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute; 
+    position: absolute;
     width: 40px;
     height: 40px;
-    margin:-3px;
+    margin: -3px;
     border-radius: 50%;
-    color:#0065FC;
-    background-color: #DEEBFF;  
+    color: #0065FC;
+    background-color: #DEEBFF;
 }
-.textfiltre{
-    margin-left: 50px;
+
+.textfiltre {
+    margin-left: 3em;
     text-decoration: none;
-    color:black;
+    color: black;
     font-weight: bolder;
 }
-.boxfiltre:hover > .logofiltre{
+
+.boxfiltre:hover>.logofiltre {
     background-color: #0065FC;
     color: white;
 }
-.boxfiltre:hover > .textfiltre{
-    color:#0065FC;
+
+.boxfiltre:hover>.textfiltre {
+    color: #0065FC;
 }
-.boxfiltre:hover{
-    border-color:#0065FC;
+
+.boxfiltre:hover {
+    border-color: #0065FC;
 }
 
 /*Logo info + phrase*/
-.info{
+
+.info {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin-top: 25px;
+    margin-bottom: 1.2em;
 }
-.phraseinfo{
-    margin-left: 10px;
+
+.imginfo {
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.logoinfo {
+    font-size: 0.6em;
+    padding: 0.4em 0.8em 0.4em 0.8em;
+    border: solid 0.2em #F2F2F2;
+    border-radius: 50px;
+}
+
+.phraseinfo {
+    margin-left: 1em;
     font-size: smaller;
 }
 
 /*Boîte HAM + LPP*/
-#boxhamlpp{
+
+#boxhamlpp {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 25px;
 }
 
 /*Etoile notation*/
-.fa{
+
+.fa {
     width: 4px;
-    margin-right:5px;
+    margin-right: 5px;
     font-size: 10px;
 }
-.blue{
+
+.blue {
     color: #0065FC;
 }
-.grey{
+
+.grey {
     color: #65656531;
 }
 
 /*Hébergements à Marseille*/
-.titreham{
-    padding: 10px 0px 0px 35px;
-    margin-bottom: 0px;
+
+.titreham {
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    width: 100%;
+    height: 4em;
     font-weight: bold;
+    margin-left: 2.2em
 }
-#boxmham{
-    justify-content: center;
-    align-items: center;
-    width: 640px;
-    height: 420px;
-    border-radius: 15px;
-    background-color:#F2F2F2;
-}
-.boxsmham{
+
+#boxmham {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    height: 320px;
-    margin: 0px 35px 0px 35px;
+    width: 760px;
+    height: 460px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
 }
-.boxham{
-    width: 166px;
+
+.boxsmham {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em 0em
+}
+
+.boxham {
+    width: 200px;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 0px 10px 4px rgb(206, 205, 205);
-    line-height: 3px;
 }
-.imgham{
-    width: 160px;
-    height: 70px; 
+
+.imgham {
+    width: 97%;
+    height: 5.5em;
     padding: 3px;
     border-radius: 15px 15px 0px 0px;
-    object-fit: cover; 
+    object-fit: cover;
 }
-.boxsham{
-    margin:8px;
+
+.boxsham {
+    margin: 8px;
     font-size: 1em;
     line-height: 3px;
 }
-.textsb1{
+
+.textsb1 {
     margin-top: 0px;
     font-weight: bold;
     font-size: 0.7em;
 }
-.textsb2{
+
+.textsb2 {
     font-size: 0.7em;
 }
-.textbas{
-    padding: 0px 0px 0px 35px;
+
+.textbas {
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    width: 100%;
+    height: 4.5em;
     font-weight: bold;
     font-size: smaller;
+    margin-left: 2.4em;
 }
 
 /*Les plus populaires*/
-.titrelogolpp{
+
+.titrelogolpp {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px 30px 0px 30px;
+    height: 4em;
     font-weight: bold;
 }
-.boxmlpp{
-    height: 420px;
-    width: 300px;
+
+.boxmlpp {
+    width: 27%;
+    height: 460px;
     border-radius: 15px;
     background-color: #F2F2F2;
 }
-.boxsmlpp{
-    display: flex ;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 330px;
-}
-.boxlpp{
+
+.boxsmlpp {
     display: flex;
-    width: 240px;
-    height: 95px;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4em;
+}
+
+.boxlpp {
+    display: flex;
+    width: 80%;
+    height: 6.7em;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 0px 10px 4px rgba(224, 224, 224, 0.651);
 }
-.boxslpp{
-    margin-left: 6px;
+
+.boxslpp {
+    margin-left: 0.5em;
+    margin-top: 0.3em;
 }
-.imglpp{
-    width: 90px;
-    height: 89px;
-    padding:3px;
+
+.imglpp {
+    width: 100px;
+    height: 100px;
+    padding: 3px;
     border-radius: 15px 0px 0px 15px;
     object-fit: cover;
 }
-.textsblpp1{
+
+.textsblpp1 {
     margin-bottom: 4px;
     margin-top: 6px;
     font-size: 0.7em;
     font-weight: bold;
 }
-.textsblpp2{
+
+.textsblpp2 {
     font-size: x-small;
     margin-top: 0px;
 }
-.boxstarlpp{
-    position: relative;top: 10px;
+
+.boxstarlpp {
+    position: relative;
+    top: 1em;
 }
+
 /*Box Activités à Marseille*/
-#boxmaam{
-    margin-top: 2em;
+
+#boxmaam {
+    margin-top: 3em;
+    flex-wrap: wrap;
 }
-.titreaam{
+
+.titreaam {
     font-weight: bolder;
     font-size: 1em;
 }
-.boxaam{
+
+.boxaam {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-.boxsaam{
+
+.boxsaam {
     box-shadow: 0px 0px 10px 4px rgba(224, 224, 224, 0.651);
     border-radius: 15px;
 }
-.boxs1aam{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
+
+.boxs1aam {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.img1aam{
-    width: 215px;
+
+.img1aam {
+    width: 240px;
     height: 320px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
-.img2aam{
-    width: 215px;
+
+.img2aam {
+    width: 250px;
     height: 150px;
     border-radius: 10px 10px 0px 0px;
     object-fit: cover;
 }
-.img3aam{
-    width: 215px;
+
+.img3aam {
+    width: 250px;
     height: 90px;
     border-radius: 10px 10px 0px 0px;
     object-fit: cover;
 }
-.stitreaam{
+
+.stitreaam {
     margin-left: 0.8em;
     font-weight: bold;
     font-size: 0.8em;
 }
 
 /*Pied de page*/
-.boxmpdp{
+
+footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    min-width: 600px;
     margin-top: 3em;
-    padding:1em;
+    padding: 1em;
     background-color: #F2F2F2;
 }
-.boxpdp{
+
+.boxpdp {
     display: flex;
     flex-direction: column;
     line-height: 1px;
 }
-.titrepdp{
+
+.titrepdp {
     font-weight: bold;
+}
+
+/* Responsive*/
+
+@media screen and (max-width:376px) {
+    body {
+        width: auto;
+        align-items: center;
+    }
+    
+    /* Header */
+    .header {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .sinscrire {
+        margin-left: 12em;
+    }
+    nav {
+        display: flex;
+        order: 2;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-right: 0px;
+    }
+    nav li {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 2em;
+        border-bottom: solid 0.2em #F2F2F2;
+    }
+    nav li:hover {
+        border-bottom: solid 0.2em #0065FC;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        width: 100%;
+    }
+    nav a:hover {
+        border-top: none;
+    }
+    
+    /* Slogan */
+    .slogan {
+        height: 6em;
+    }
+    .slogan1 {
+        font-size: larger;
+        margin-left: 1.7em;
+        margin-right: 1.7em;
+    }
+    .slogan2 {
+        font-size: 0.9em;
+        margin-left: 2.3em;
+    }
+    
+    /* MDR */
+    .mdr {
+        margin-left: 2em;
+        width: 100%;
+    }
+    .gps {
+        width: 2.5em;
+    }
+    .submit {
+        display: none;
+    }
+    .submit2 {
+        display: flex;
+    }
+    
+    /* Filtre */
+    .titrefiltre{
+        margin-bottom: 0em;
+    }
+    .boxmfiltre {
+        max-width: 220px;
+        height: 17em;
+        margin-left: 2em;
+        margin-top: 1em;
+        gap:0em
+    }
+    
+    /* Phrase info */
+    .info {
+        height: 3em;
+        margin-left: 2em;
+        margin-top: 2em;
+    }
+    .phraseinfo {
+        width: 80%;
+    }
+    
+    /* HAM */
+    .titreham, .textbas {
+        margin-left: 1.2em;
+    }
+    .boxmlpp {
+        width: 100%;
+        border-radius: 0px;
+    }
+    #boxmham {
+        height: 80%;
+        order: 2;
+        width: 100%;
+        background-color: white;
+    }
+    .boxham {
+        width: 90%;
+    }
+    .imgham {
+        width: 318px;
+    }
+    
+    /* AAM */
+    .titreaam {
+        margin-left: 1.2em;
+    }
+    .boxaam, .boxs1aam {
+        align-items: center;
+        justify-content: center;
+        gap: 2em
+    }
+    .boxsaam {
+        width: 328px;
+    }
+    .img1aam, .img2aam, .img3aam {
+        width: 320px;
+        height: 6.5em;
+        padding-left: 4px;
+        padding-top: 4px;
+        border-radius: 15px 15px 0px 0px
+    }
+    
+    /* Footer */
+    footer {
+        height: 100%;
+        align-items: center;
+        justify-content: left;
+        padding: 2em 5em 2em 2em;
+        gap: 2em
+    }
 }
