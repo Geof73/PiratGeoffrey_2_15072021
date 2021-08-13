@@ -78,6 +78,7 @@ nav a:hover {
 }
 
 .recherche {
+    width: 15em;
     padding-left: 1em;
     border: solid 2px #F2F2F2;
     font-family: raleway;
@@ -104,8 +105,9 @@ nav a:hover {
 
 .submit2 {
     display: none;
-    padding: 10px 20px 10px 10px;
-    border-radius: 0px 20px 20px 0px;
+    position: relative; right:10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 14px;
     color: #ffffff;
     border-color: #0065FC;
     background-color: #0065FC;
@@ -119,7 +121,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    height: 5em;
+    height: 7em;
     gap: 1em
 }
 
@@ -128,7 +130,7 @@ nav a:hover {
     align-items: center;
     padding: 9px 20px 9px 0px;
     border-radius: 25px;
-    border: solid #DEEBFF;
+    border: solid #F2F2F2;
 }
 
 .titrefiltre {
@@ -168,14 +170,18 @@ nav a:hover {
 .boxfiltre:hover {
     border-color: #0065FC;
 }
-
+.falign{
+    display: flex;
+    flex-wrap: nowrap;
+    gap:1em
+}
 /*Logo info + phrase*/
 
 .info {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 1.2em;
+    margin-bottom: 2em;
 }
 
 .imginfo {
@@ -231,7 +237,7 @@ nav a:hover {
     width: 100%;
     height: 4em;
     font-weight: bold;
-    margin-left: 2.2em
+    margin-left: 2.6em
 }
 
 #boxmham {
@@ -284,13 +290,13 @@ nav a:hover {
 
 .textbas {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: left;
     width: 100%;
     height: 4.5em;
     font-weight: bold;
     font-size: smaller;
-    margin-left: 2.4em;
+    margin-left: 2.8em;
 }
 
 /*Les plus populaires*/
@@ -417,16 +423,18 @@ nav a:hover {
 footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:start;
     margin-top: 3em;
     padding: 1em;
     background-color: #F2F2F2;
+    gap:15em
 }
 
 .boxpdp {
     display: flex;
     flex-direction: column;
     line-height: 1px;
+    margin-left: 1em;
 }
 
 .titrepdp {
@@ -451,27 +459,25 @@ footer {
         margin-left: 12em;
     }
     nav {
-        display: flex;
         order: 2;
-        align-items: center;
-        justify-content: center;
         width: 100%;
         margin-right: 0px;
     }
+    nav a{
+       padding:2em
+    }
     nav li {
+        display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 2em;
+        height: 3em;
         border-bottom: solid 0.2em #F2F2F2;
     }
     nav li:hover {
         border-bottom: solid 0.2em #0065FC;
     }
     nav ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         padding-left: 0px;
         width: 100%;
     }
@@ -495,7 +501,7 @@ footer {
     
     /* MDR */
     .mdr {
-        margin-left: 2em;
+        justify-content: center;
         width: 100%;
     }
     .gps {
@@ -514,10 +520,10 @@ footer {
     }
     .boxmfiltre {
         max-width: 220px;
-        height: 17em;
+        height: 14em;
         margin-left: 2em;
         margin-top: 1em;
-        gap:0em
+        
     }
     
     /* Phrase info */
@@ -530,25 +536,31 @@ footer {
         width: 80%;
     }
     
-    /* HAM */
+    /* HAM+LPP */
     .titreham, .textbas {
         margin-left: 1.2em;
     }
-    .boxmlpp {
-        width: 100%;
-        border-radius: 0px;
-    }
     #boxmham {
-        height: 80%;
+        height: 1100px;
         order: 2;
         width: 100%;
         background-color: white;
+    }
+    .boxsmham{
+        gap:1em
     }
     .boxham {
         width: 90%;
     }
     .imgham {
         width: 318px;
+    }
+    .boxmlpp {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .boxlpp{
+        padding-left: 1px;
     }
     
     /* AAM */
@@ -558,7 +570,7 @@ footer {
     .boxaam, .boxs1aam {
         align-items: center;
         justify-content: center;
-        gap: 2em
+        gap: 1em
     }
     .boxsaam {
         width: 328px;
@@ -570,13 +582,15 @@ footer {
         padding-top: 4px;
         border-radius: 15px 15px 0px 0px
     }
-    
+
     /* Footer */
     footer {
         height: 100%;
-        align-items: center;
         justify-content: left;
         padding: 2em 5em 2em 2em;
         gap: 2em
+    }
+    .titrepdp{
+        font-size: 1.1em;
     }
 }
