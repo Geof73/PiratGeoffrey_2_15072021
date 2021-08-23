@@ -33,7 +33,7 @@ nav li {
     justify-content: center;
     align-items: center;
     border-top: 2px solid transparent;
-    padding: 2em 0 0 0;
+    padding: 3em 0 0 0;
 }
 nav li:hover {
     border-top: solid 2px #0065FC;
@@ -450,33 +450,30 @@ footer {
 
 /* Responsive mobile*/
 
-@media screen and (max-width:610px) {
-    body{
+@media screen and (max-width:801px) {
+    body {
         margin: 0 auto;
     }
-    .sectionchoix{
-        margin:90%
-    }
-
+    
     /* Menu */
     .screen {
         display: none;
     }
     .mobile {
         display: flex;
-        justify-content: center;
     }
-    main{
-        justify-content: center;
-    }
-    li.sinscrire {
+    li.sinscrire, li.imgreservia {
         font-weight: bold;
+        width: 45%;
+    }
+    nav, nav ul {
+       width: 100%; 
     }
 
     /* Section Choix */
-    .sectionchoix {
-        margin: 1.2em;
-    }
+        .sectionchoix{
+           margin:1em
+        }
 
     /* Moteur de recherche */
     .boxmdr {
@@ -491,41 +488,37 @@ footer {
     }
    
     /* Box HAM, LPP */
-    #boxhamlpp, .boxaam {
+    #boxhamlpp{
         flex-wrap: wrap-reverse;
         justify-content: center;
+        margin: 1em;
     }
-    .textsblpp1 {
-        font-size: 0.9em;
-    }
-    .textsblpp2 {
-        margin-top:0.5em;
-        font-size:0.8em;
-    }
-    #boxmainlpp, #boxmainham{
+    #boxmainlpp {
         flex-wrap: wrap-reverse;
-        width: 330px;
-        padding: 0em 1em 2em 1em;
+        width: 100%;
+        margin: 0 auto;
+        padding:0;
         border-radius: 0;
     }
     #boxmainham{
         background-color: white;
-        padding-bottom: 0em;
+        padding:0;
     }
     .titrelogolpp{
         margin:1em
     }
     ul.boxsmham, ul.boxlpp{
-        gap:1em
+        gap:1em;
+        margin-bottom:2em; 
     }
-    ul.boxlpp>li{
-        width: 340px;
-    }
-    ul.boxsmham>li{
-        width: 100%;
+    ul.boxlpp>li, ul.boxsmham>li{
+        min-width: 50%;
     }
     .imgham{
-        width: 324px;
+        width: 98%;
+    }
+    ul.boxsmham > li{
+        width: 330px;
     }
     .afficherplus{
         margin-top:2em
@@ -533,24 +526,25 @@ footer {
 
     /* AAM */
     #boxmainaam{
-        margin:0 auto;
-        width: 330px;
-        padding:1em;
+        margin:1em;
     }
-   
     .boxaam{
         justify-content: center;
         gap:1em
     }
-    .boxsaam, .boxsaam1 {
+    .boxsaam{
         width: 330px;
+        height: 200px;
+        gap:1em;
+    }
+    .boxsaam1{
         gap:1em
     }
     .img1aam, .img2aam, .img3aam{
         border-radius: 15px 15px 0 0;
         width: 324px;
         height: 150px;
-        padding:3px;
+        padding:0.2em;
     }
 
     /* PDP */
