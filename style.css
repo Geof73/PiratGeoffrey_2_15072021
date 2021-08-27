@@ -1,123 +1,104 @@
 /*Marge site et police*/
-main, header {
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
+
+html {
+    font-family: sans-serif, 'Raleway';
 }
+
 body {
-    margin-top: 0;
+    margin: 0 auto;
 }
 
-/*Section menu*/
+main {
+    margin: 2em;
+}
 
-/* Menu pour écran */
-.screen {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 5em;
-}
-.screen nav {
-    min-width: 480px;
-}
+/*Menu*/
+
 nav ul {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
     margin: 0;
+    padding: 0;
     list-style: none;
 }
+
 nav li {
     display: flex;
-    width: 10em;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    border-top: 2px solid transparent;
-    padding: 3em 0 0 0;
+    justify-content: center;
+    width: 10em;
+    height: 1em;
+    padding-top: 2em;
 }
-nav li:hover {
-    border-top: solid 2px #0065FC;
-}
-nav li:hover>* {
-    color: #0065FC;
-}
+
 nav a {
     text-decoration: none;
     color: black;
-    border-top: 2px solid transparent;
-}
-.screen li.sinscrire {
-    font-weight: bold;
-    justify-content: center;
-    border-top: 2px solid transparent;
-}
-.imgreservia:hover, .sinscrire:hover {
-    border: none
 }
 
-/* Menu pour mobile */
-body {
-    min-width: 375px;
-}
-.mobile {
-    display: none;
-}
-nav ul {
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.mheberg, .mactiv {
-    width: 50%;
-    border-bottom: solid 0.2em #F2F2F2;
-    padding-bottom: 1em
-}
-.mheberg:hover, .mactiv:hover {
-    border-top: none;
-    border-bottom: solid 0.2em #0065FC;
-    padding-bottom: 1em;
-}
-.imgreservia {
+li.imgreservia {
     justify-content: left;
-    border-top: none
+    margin-right: auto;
 }
+
 .sinscrire {
-    justify-content: right;
+    font-weight: bold;
+}
+
+li.mactivites, li.mhebergements {
+    border-top: solid 2px transparent;
+}
+
+nav li:hover {
+    border-top: solid 2px #0065FC;
+}
+
+nav li:hover>* {
+    color: #0065FC;
+}
+
+.imgreservia:hover, .sinscrire:hover {
+    border: none
 }
 
 /* Section contenant slogan, moteur de recherche, filtre, logo phrase info*/
 
 /* Slogan */
+
 .boxslogan {
     display: flex;
     flex-direction: column;
     width: 90%;
 }
+
 .texteslogan1 {
     font-weight: bolder;
     margin-bottom: 0;
 }
+
 .texteslogan2 {
-    line-height: 0px;
-    font-size: 0.9em;
+    margin-top: 0.5em;
 }
 
 /* Moteur de recherche (MDR) */
+
 .boxmdr {
     display: flex;
-    height: 2.8em;
-    margin: 0.8em 0 0 0;
+    margin: 1em 0 0.5em 0;
 }
+
 .gps {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 2.8em;
-    width: 2.8em;
+    padding: 1em;
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
 }
+
 .recherche {
     width: 14em;
     padding-left: 1em;
@@ -125,11 +106,13 @@ nav ul {
     font-family: raleway;
     font-size: 1em;
 }
+
 ::placeholder {
     color: black;
     font-weight: bold;
     opacity: 1;
 }
+
 .submit {
     width: 8em;
     border-radius: 0px 15px 15px 0px;
@@ -139,15 +122,15 @@ nav ul {
     font-weight: bold;
     font-size: 1em;
 }
+
 .submit:hover {
     border-color: #F2F2F2;
 }
-.submit2 {
+
+.submitmq {
     display: none;
-    position: relative;
-    right: 10px;
-    padding: 0.8em;
-    border-radius: 14px;
+    width: 3em;
+    border-radius: 15px 15px 15px 15px;
     color: #ffffff;
     border-color: #0065FC;
     background-color: #0065FC;
@@ -156,14 +139,16 @@ nav ul {
 }
 
 /*Filtres*/
+
 .boxmainfiltre {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 1em;
-    gap: 1em
+    gap: 1em;
+    font-family: 'Raleway';
 }
-ul.boxsmainfiltre {
+
+ul.boxulfiltre {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -171,28 +156,31 @@ ul.boxsmainfiltre {
     gap: 1em;
     list-style: none;
 }
-li.boxfiltre {
+
+li.boxlifiltre {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 25px;
     border: solid #F2F2F2;
 }
+
 .titrefiltre {
-    font-weight: bolder;
+    font-weight: bold;
     margin: 0 1em 0 0;
 }
+
 .textefiltre {
-    margin: 0 1em 0 1em;
+    margin: 0 1.5em 0 1.5em;
     text-decoration: none;
     color: black;
-    font-weight: bolder;
+    font-weight: bold;
 }
+
 .logofiltre {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     width: 3em;
     height: 3em;
     margin: -2.5px;
@@ -201,221 +189,270 @@ li.boxfiltre {
     background-color: #DEEBFF;
 }
 
-/* Hover */
-.boxfiltre:hover>.logofiltre {
+.boxlifiltre:hover>.logofiltre {
     background-color: #0065FC;
     color: white;
 }
-.boxfiltre:hover>.textefiltre {
+
+.boxlifiltre:hover>.textefiltre {
     color: #0065FC;
 }
-.boxfiltre:hover {
+
+.boxlifiltre:hover {
     border-color: #0065FC;
     box-shadow: 0px 0px 10px 4px #eaeef5;
 }
 
 /*Logo info + phrase*/
+
 .info {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
     height: 3em;
-    margin-bottom: 1em;
 }
-.imginfo {
+
+.iconeinfo {
     align-items: center;
     justify-content: center;
+    margin-right: 1em;
+    padding: 0.3em 0.7em 0.3em 0.7em;
     color: #0065FC;
     background-color: white;
     border-radius: 50%;
-}
-.logoinfo {
-    font-size: 0.6em;
-    padding: 0.4em 0.8em 0.4em 0.8em;
     border: solid 0.2em #F2F2F2;
-    border-radius: 50%;
-    margin-right: 1em;
-}
-.phraseinfo {
-    font-size: 0.9em;
-    width: 80%;
 }
 
-/*Flex Hébergements à Marseille (HAM) + Les Plus Populaires (LPP) */
+/* Section HAM et LPP */
+
 #boxhamlpp {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1em;
+}
+
+/* Footer */
+
+.titrebox, header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
 }
 
 /*Etoile notation*/
+
 .fa {
-    width: 4px;
-    margin-right: 5px;
+    width: 8px;
     font-size: 10px;
 }
+
 .blue {
     color: #0065FC;
 }
+
 .grey {
     color: #65656531;
 }
 
 /*Hébergements à Marseille*/
 
-.titreham {
-    font-weight: bold;
-}
 #boxmainham {
+    display: flex;
+    flex-wrap: wrap;
+    width: 48em;
     padding: 1em 2em 2em 2em;
     border-radius: 15px;
     background-color: #F2F2F2;
-    max-width: 43em;
-    justify-content: center;
 }
-ul.boxsmham {
-    flex-wrap: wrap;
+
+ul.boxulham {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
     gap: 2em;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0em;
     list-style-type: none;
 }
-ul.boxsmham>li {
-    width: 200px;
-    height: 155px;
-    border-radius: 15px;
+
+ul.boxulham>li {
+    width: 230px;
+    height: 170px;
+    border-radius: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px 4px rgb(206, 205, 205);
 }
+
+ul.boxulham figure {
+    margin: 0;
+    padding: 4px;
+}
+
+ul.boxulham figure figcaption {
+    margin-top: 0em;
+    padding: 5px 10px;
+}
+
 .imgham {
-    width: 194px;
-    height: 90px;
-    padding: 3px;
+    width: 222px;
+    height: 100px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
-.boxsham {
-    margin: 8px;
-    font-size: 1em;
-    line-height: 3px;
-}
+
 .textsb1 {
-    margin-top: 0px;
+    margin: 0;
     font-weight: bold;
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
+
 .textsb2 {
-    font-size: 0.7em;
+    margin-bottom: 0;
+    margin-top: 0.3em;
+    font-size: 0.8em;
 }
-.afficherplus {
-    display: flex;
+
+.pdpbox {
     font-weight: bold;
-    font-size: smaller;
-    margin-top: 4em;
+    padding: 2em 0 0 0;
 }
 
 /*Les plus populaires*/
 
-.titrelogolpp {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-}
 #boxmainlpp {
+    width: 17em;
     padding: 1em 2em 2em 2em;
-    width: 18.5em;
     border-radius: 15px;
     background-color: #F2F2F2;
 }
-ul.boxlpp {
-    flex-wrap: wrap;
+
+ul.boxullpp {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
     gap: 2em;
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-ul.boxlpp>li {
+
+ul.boxullpp>li {
     display: flex;
-    width: 300px;
+    width: 280px;
     height: 120px;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 0px 10px 4px rgb(206, 205, 205);
 }
-.boxslpp {
-    width: 100%;
+
+ul.boxullpp li figure {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 1em;
+    padding: 4px;
+    margin: 0;
+}
+
+ul.boxullpp li figure figcaption {
+    margin: 10px;
 }
 
 .imglpp {
-    padding: 0.2em;
-    width: 110px;
-    height: 113px;
-    border-radius: 15px 0px 0px 15px;
+    width: 112px;
+    height: 112px;
+    border-radius: 10px 0px 0px 10px;
     object-fit: cover;
 }
-.textsblpp1 {
+
+.textelilpp1 {
     margin: 0;
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: bold;
 }
-.textsblpp2 {
-    font-size: x-small;
+
+.textelilpp2 {
+    margin-top: 0.5em;
+    margin-bottom: 2.8em;
+    font-size: 0.7em;
 }
 
 /*Box Activités à Marseille*/
-#boxmainaam {
-    margin-top: 3em;
-    flex-wrap: wrap;
+#boxmainaam{
+    height: 20em;
 }
-.titreaam {
-    font-weight: bolder;
-    font-size: 1em;
-}
-.boxaam {
+
+.boxulaam {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
     padding: 0;
-    gap:2em
+    gap: 2em;
+    list-style: none;
 }
-.boxsaam {
+
+.boxulaam > li{
     box-shadow: 0px 0px 10px 4px rgba(224, 224, 224, 0.651);
     border-radius: 15px;
 }
-.boxsaam1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+.boxulaam li figure {
+    margin: 0;
 }
-.img1aam {
-    width: 260px;
-    height: 340px;
-    border-radius: 15px 15px 0px 0px;
-    object-fit: cover;
+
+.livp, .lipndc {
+    width: 240px;
+    height: 360px;
+    border-radius: 15px;
 }
-.img2aam {
-    width: 260px;
+
+.lifdp {
+    width: 240px;
     height: 160px;
+    border-radius: 15px;
+}
+
+.liidf{
+    width: 240px;
+    height: 120px;
+    border-radius: 15px;
+}
+
+.linddlg, .lipl{
+    width: 240px;
+    height: 120px;
+    border-radius: 15px;
+}
+
+.imgvp, .imgpndc {
+    width: 240px;
+    height: 320px;
     border-radius: 10px 10px 0px 0px;
     object-fit: cover;
 }
-.img3aam {
-    width: 260px;
-    height: 100px;
+
+.imgfdp {
+    width: 240px;
+    height: 120px;
     border-radius: 10px 10px 0px 0px;
     object-fit: cover;
 }
+
+.imgidf {
+    width: 240px;
+    height: 80px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+}
+
+.imgpl, .imgnddlg {
+    width: 240px;
+    height: 120px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+}
+
 .stitreaam {
     margin-left: 0.8em;
     font-weight: bold;
@@ -423,30 +460,31 @@ ul.boxlpp>li {
 }
 
 /*Pied de page*/
+
 footer {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
-    margin:0 auto;
+    width: 100%;
+    margin: 0;
     padding: 2em 2em 1em;
-    gap: 2em;
-    margin-top: 3em;
     background-color: #F2F2F2;
     font-family: 'Raleway', sans-serif;
 }
+
 .boxpdp {
     display: flex;
     flex-direction: column;
-    margin-right: 10em;
+    margin-right: auto;
 }
+
 .titrepdp {
     font-weight: bold;
     margin-bottom: 0.5em;
 }
+
 .stitrepdp {
     line-height: 1em;
 }
-
 
 /* Responsive mobile*/
 
@@ -454,41 +492,57 @@ footer {
     body {
         margin: 0 auto;
     }
-    
-    /* Menu */
-    .screen {
-        display: none;
-    }
-    .mobile {
-        display: flex;
-    }
-    li.sinscrire, li.imgreservia {
-        font-weight: bold;
-        width: 45%;
-    }
-    nav, nav ul {
-       width: 100%; 
-    }
 
-    /* Section Choix */
-        .sectionchoix{
-           margin:1em
-        }
+    /* Menu */
+    nav ul {
+        width: 100%;
+    }
+    li.mhebergements {
+        width: 50%;
+        padding-bottom: 1em;
+        border-top: solid 0px transparent;
+        border-bottom: solid 2px #F2F2F2;
+        order: 3;
+    }
+    li.mactivites {
+        width: 50%;
+        padding-bottom: 1em;
+        border-top: solid 0px transparent;
+        border-bottom: solid 2px #F2F2F2;
+        order: 2
+    }
+    li.mactivites:hover, li.mhebergements:hover {
+        border-top: transparent;
+        border-bottom: solid 2px #0065FC;
+    }
+    li.imgreservia {
+        justify-content: left;
+        width: 50%;
+        padding-right: 0em;
+        margin: 0;
+    }
+    li.sinscrire {
+        justify-content: right;
+        width: 50%;
+    }
 
     /* Moteur de recherche */
     .boxmdr {
         justify-content: center;
-        margin-bottom: 2em;
     }
     .submit {
         display: none;
     }
-    .submit2 {
+    .submitmq {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 15px;
     }
-   
+
     /* Box HAM, LPP */
-    #boxhamlpp{
+    #boxhamlpp {
         flex-wrap: wrap-reverse;
         justify-content: center;
         margin: 1em;
@@ -497,58 +551,58 @@ footer {
         flex-wrap: wrap-reverse;
         width: 100%;
         margin: 0 auto;
-        padding:0;
+        padding: 0;
         border-radius: 0;
     }
-    #boxmainham{
+    #boxmainham {
         background-color: white;
-        padding:0;
+        padding: 0;
     }
-    .titrelogolpp{
-        margin:1em
+    .titrelogolpp {
+        margin: 1em
     }
-    ul.boxsmham, ul.boxlpp{
-        gap:1em;
-        margin-bottom:2em; 
+    ul.boxsmham, ul.boxlpp {
+        gap: 1em;
+        margin-bottom: 2em;
     }
-    ul.boxlpp>li, ul.boxsmham>li{
+    ul.boxlpp>li, ul.boxsmham>li {
         min-width: 50%;
     }
-    .imgham{
+    .imgham {
         width: 98%;
     }
-    ul.boxsmham > li{
+    ul.boxsmham>li {
         width: 330px;
     }
-    .afficherplus{
-        margin-top:2em
+    .afficherplus {
+        margin-top: 2em
     }
 
     /* AAM */
-    #boxmainaam{
-        margin:1em;
+    #boxmainaam {
+        margin: 1em;
     }
-    .boxaam{
+    .boxaam {
         justify-content: center;
-        gap:1em
+        gap: 1em
     }
-    .boxsaam{
+    .boxsaam {
         width: 330px;
         height: 200px;
-        gap:1em;
+        gap: 1em;
     }
-    .boxsaam1{
-        gap:1em
+    .boxsaam1 {
+        gap: 1em
     }
-    .img1aam, .img2aam, .img3aam{
+    .img1aam, .img2aam, .img3aam {
         border-radius: 15px 15px 0 0;
         width: 324px;
         height: 150px;
-        padding:0.2em;
+        padding: 0.2em;
     }
 
     /* PDP */
-    .boxpdp{
-        margin-right:1em
+    .boxpdp {
+        margin-right: 1em
     }
 }
