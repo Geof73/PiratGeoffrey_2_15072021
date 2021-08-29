@@ -103,11 +103,10 @@ nav li:hover>* {
 }
 
 .recherche {
-    width: 15em;
+    width: 17em;
     padding-left: 1em;
     border: solid 2px #F2F2F2;
     font-family: raleway;
-    font-size: 1em;
 }
 
 ::placeholder {
@@ -213,7 +212,8 @@ li.boxlifiltre {
     height: 1em;
     margin-right: 1em;
     padding: 0.2em 0.6em;
-    position: relative; top: 0.5em;
+    position: relative;
+    top: 0.6em;
     color: #0065FC;
     background-color: white;
     border-radius: 50%;
@@ -521,9 +521,7 @@ footer {
     main {
         margin: 0;
     }
-
     /* Menu */
-
     nav ul {
         width: 100%;
         margin: 0;
@@ -559,12 +557,9 @@ footer {
     .sinscrire {
         padding-right: 2em;
     }
-
     /* sectionchoix */
-
     .sectionchoix {
         margin: 2em;
-        font-size: 0.9em;
     }
     .texteslogan1 {
         font-size: 1.4em;
@@ -572,6 +567,7 @@ footer {
     .boxmdr {
         justify-content: center;
         margin: 2em 0;
+        margin-left: 0.5em;
     }
     .submit {
         display: none;
@@ -580,7 +576,8 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative; right: 15px;
+        position: relative;
+        right: 15px;
         width: 3.5em;
     }
     .boxmainfiltre {
@@ -593,17 +590,15 @@ footer {
     }
     .info {
         margin: 1em 0 0 0;
+        font-size: 0.8em;
     }
     
     /* Box HAMLPP */
-
     #boxhamlpp {
         flex-wrap: wrap-reverse;
         gap: 0
     }
-
     /* Box HAM */
-
     #boxmainham {
         background-color: white;
     }
@@ -620,9 +615,7 @@ footer {
         margin: 0;
         padding-top: 2em;
     }
-
     /* Box LPP */
-
     #boxmainlpp {
         width: 100%;
         margin: 0 auto;
@@ -631,9 +624,7 @@ footer {
     .boxullpp {
         gap: 1em;
     }
-
     /* AAM */
-
     #boxmainaam {
         margin: 0 2em 2em 2em;
     }
@@ -666,9 +657,7 @@ footer {
         width: 100%;
         height: 140px;
     }
-
     /* PDP */
-
     .footerpdp {
         padding: 0 2em;
     }
